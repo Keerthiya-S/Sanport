@@ -1,0 +1,433 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: "Poppins", serif;;
+}
+.poppins-medium {
+    font-family: "Poppins", serif;
+    font-weight: 500;
+    font-style: normal;
+  }
+.name{
+    color: white;
+    font-size:x-large ;
+}
+.header{
+    width: 100%;
+    z-index: 1000;
+    position: fixed;
+    padding: 20px;
+    background: linear-gradient(188deg, rgba(8,2,108,1) 0%, rgba(13,8,121,1) 100%);
+}
+.header div{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.navi{
+    display: inline;
+    padding: 15px;
+}
+.navi a {
+    text-decoration: none;
+    color: white;
+    
+}
+.navi a:hover{
+    background: linear-gradient(3deg, rgba(20,9,247,0.720500700280112) 0%, rgba(20,185,221,1) 0%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.section2{
+    background: linear-gradient(0deg, rgba(2,0,36,1) 0%, rgba(13,8,121,1) 100%);
+    height: 100vh;
+    padding-top: 100px;
+}
+.body{
+    display: flex;
+    width: 80%;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0px auto;
+    color: white;
+    padding: 15px;
+}
+.body .intro {
+    padding: 30px;
+}
+.body p{
+    font-size: 18px;
+}
+.body h2{
+    font-size:xx-large;
+    
+}
+.body h1{
+    text-transform: uppercase;
+    font-weight:bolder;
+    font-size: 300%;
+    background: linear-gradient(0deg, rgba(20,9,247,0.720500700280112) 0%, rgba(20,185,221,1) 0%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin: 0.5em 0; /* Add some margin to prevent clipping */
+}
+.circleimg{
+    background: linear-gradient(0deg, rgba(20, 9, 247, 0.72) 0%, rgba(20, 185, 221, 1) 100%);
+    border-radius: 50%;
+    width: 300px; /* Set a fixed width */
+    height: 300px; /* Set a fixed height */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    transition: transform 0.5s ease;
+}
+.circleimg img {
+    border-radius: 50%;
+    width: 90%; /* Image is 80% of the circle */
+    height: 90%; /* Maintain aspect ratio */
+    object-fit: cover; /* Ensures the image fits nicely */
+    transition: transform 0.5s ease;
+}
+.circleimg:hover {
+    transform: scale(1.2); /* Zoom the entire container */
+}
+.circleimg:hover img {
+    transform: scale(1.2); /* Zoom in on hover */
+}
+.socialmedia{
+    display: flex;
+    justify-content: space-between;
+    width: 40%;
+    margin: 0px;
+}
+ol, ul {
+  padding-left: 0;   /* Remove left padding */
+  margin-left: 0;   
+}
+.socialmedia li {
+    display: flex; /* Use flexbox for centering */
+    align-items: center; /* Center vertically */
+    justify-content: center; /* Center horizontally */
+    width: 35px; /* Ensure the circle has a fixed size */
+    height: 35px; /* Match width for a perfect circle */
+    background-color:rgba(20, 185, 221, 1); /* Background color for the circle */
+    border-radius: 50%;
+    transition: color 0.2s, background-color 0.5s; 
+
+}
+.icon{
+   font-size: 25px; 
+   color: rgba(8,2,108,1);
+}
+.socialmedia li:hover {
+    color:rgba(20, 185, 221, 1);
+    cursor: pointer; /* Show a pointer cursor on hover */
+    background-color:rgba(8,2,108,1) ;
+
+}
+ol, ul {
+  padding-left: 0 !important;   /* Remove left padding */
+  margin-left: 0 !important;    /* Remove left margin */
+  list-style: none !important;  /* Remove default list styles */
+}
+.resume{
+    width: 150px;
+    height: 50px;
+    background-color:rgba(20, 185, 221, 1) ;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: 0.2s;
+    font-size: 13px;
+}
+.resume:hover{
+    background-color: rgb(5, 2, 57) ;
+}
+.resume:hover a{
+    color:rgba(20, 185, 221, 1)
+}
+.resume a{
+    text-decoration: none;
+    color: white;
+    
+}
+
+.aboutimg {
+  position: relative;
+  width: 100%;
+  height: 130vh; /* Cut the container's height to half the viewport */
+  overflow: hidden; /* Ensure anything outside the container is hidden */
+} 
+.about h1 {
+  margin-bottom: 0; /* Removes the bottom margin */
+}
+.aboutimg .img {
+  position: absolute;
+  width: 100%;
+  margin-top: -150px;
+  z-index: -1;
+  margin-bottom: 500px;
+}
+.hi{
+  width: 8%;
+  margin-left: 10px;
+  animation: wobble-hor-bottom 1.0s both infinite;
+}
+
+@keyframes wobble-hor-bottom {
+  0%,
+  100% {
+    -webkit-transform: translateX(0%);
+            transform: translateX(0%);
+    -webkit-transform-origin: 50% 50%;
+            transform-origin: 50% 50%;
+  }
+  15% {
+    -webkit-transform: translateX(-30px) rotate(-6deg);
+            transform: translateX(-30px) rotate(-6deg);
+  }
+  30% {
+    -webkit-transform: translateX(15px) rotate(6deg);
+            transform: translateX(15px) rotate(6deg);
+  }
+  45% {
+    -webkit-transform: translateX(-15px) rotate(-3.6deg);
+            transform: translateX(-15px) rotate(-3.6deg);
+  }
+  60% {
+    -webkit-transform: translateX(9px) rotate(2.4deg);
+            transform: translateX(9px) rotate(2.4deg);
+  }
+  75% {
+    -webkit-transform: translateX(-6px) rotate(-1.2deg);
+            transform: translateX(-6px) rotate(-1.2deg);
+  }
+}
+
+.about h1{
+    background: linear-gradient(0deg,rgba(13,8,121,1) 0%, rgba(2,0,36,1) 100% );
+    color: white;
+    padding: 20px;
+}
+.about p {
+  width: 20%;
+  padding: 20px;
+  color: white;
+  background: rgba(0, 0, 0, 0.6); /* Optional: Add a background for contrast */
+  border-radius: 10px; /* Optional: Add rounded corners */
+  margin-top: 19%;
+  margin-left: 20px;
+}
+.topic-image {
+  cursor: pointer;
+  border-radius: 8px;
+}
+
+.additional-images img {
+  border-radius: 10px;
+}
+.container,
+.container .card {
+  border: none;
+}
+.card-title{
+  text-align: center;
+}
+.topic-image {
+  position: relative;
+  width: 100%; /* Ensures the image fills the card width */
+  height: 250px; /* Sets a fixed height */
+  object-fit:contain; /* Ensures the image maintains aspect ratio and covers the area */
+}
+.image-box {
+  background-color: #f9f9f9; /* Light background color */
+  border-radius: 8px; /* Rounded corners */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Soft shadow */
+  padding: 10px; /* Space inside the box around the image */
+  text-align: center; /* Center the image inside */
+  margin-bottom: 15px; /* Space between rows */
+}
+
+.image-box img {
+  border-radius: 4px; /* Slight rounding for the image */
+  width: 100%; /* Responsive image */
+  height: auto; /* Maintain aspect ratio */
+}
+.service h1{
+  color: white;
+  background: linear-gradient(3deg, rgba(0,0,0,1) 0%, rgba(4,147,239,1) 100%);
+  padding: 15px;
+}
+.hover-animation{
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Media Queries for Responsive Design */
+@media (max-width: 1024px) {
+    .body {
+      flex-direction: column;
+      width: 90%;
+      padding: 20px;
+    }
+    .section2{
+        height: 100%;
+    }
+    .circleimg {
+      width: 250px; /* Reduce circle size */
+      height: 250px;
+    }
+  
+    .socialmedia {
+      width: 60%; /* Adjust social media container width */
+    }
+  
+    .resume {
+      width: 130px; /* Adjust button size */
+      height: 45px;
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .body {
+      width: 95%;
+    }
+    .navi {
+        display: none; /* Stack navigation items */
+        
+      }
+    .section2{
+        height: 100%;
+    }
+    .body .intro h1 {
+      font-size: 2.5rem; /* Adjust heading size */
+    }
+  
+    .circleimg {
+      width: 200px; /* Further reduce circle size */
+      height: 200px;
+    }
+  
+    .socialmedia {
+      width: 80%; /* Adjust social media container width */
+    }
+  
+    .socialmedia li {
+      width: 30px; /* Resize social media icons */
+      height: 30px;
+    }
+  
+    .icon {
+      font-size: 20px; /* Resize icons */
+    }
+  
+    .resume {
+      width: 120px; /* Adjust button size */
+      height: 40px;
+    }
+    .aboutimg {
+      height: 80vh; /* Reduce height */
+    }
+  
+    .aboutimg .img {
+      margin-top: -120px; /* Adjust top margin */
+    }
+  
+    .hi {
+      width: 12%; /* Make the "hi" image larger for better visibility */
+    }
+  
+    .about h1 {
+      font-size: 2rem; /* Reduce heading size */
+      padding: 15px;
+    }
+  
+    .about p {
+      width: 40%; /* Increase width for better readability */
+      margin-top: 10%;
+      font-size: 0.9rem; /* Slightly smaller font size */
+    }     
+  }
+  
+  @media (max-width: 480px) {
+    .name {
+      font-size: large; /* Adjust heading size */
+    }
+  
+    .navi {
+      display: none; /* Stack navigation items */
+      
+    }
+    .section2{
+        height: 100%;
+    }
+    .icon{
+
+    }
+    .body .intro {
+      padding: 15px;
+      text-align: center; /* Center align text */
+    }
+  
+    .body h1 {
+      font-size: 2rem; /* Further adjust heading size */
+    }
+  
+    .circleimg {
+      width: 150px; /* Further reduce circle size */
+      height: 150px;
+    }
+    .circleimg:hover {
+        transform: scale(1.1); /* Zoom the entire container */
+    }
+    .circleimg:hover img {
+        transform: scale(1.1); /* Zoom in on hover */
+    }
+    .socialmedia {
+      width: 100%; /* Full width for social media container */
+      justify-content: space-around;
+      margin: 0px auto;
+      display: flex;
+      align-items: center;
+      
+    }
+  
+    .socialmedia li {
+      width: 25px; /* Resize social media icons */
+      height: 25px;
+    }
+  
+    .icon {
+      font-size: 18px; /* Resize icons */
+    }
+  
+    .resume {
+      width: 150px;/* Adjust button size */
+      height: 35px;
+      font-size: 0.9rem; /* Adjust font size */
+    }
+    .aboutimg {
+      height: 60vh; /* Further reduce height */
+    }
+  
+    .aboutimg .img {
+      margin-top: -80px; /* Adjust for smaller screens */
+    }
+  
+    .hi {
+      width: 15%; /* Larger "hi" image for small screens */
+    }
+  
+    .about h1 {
+      font-size: 1.5rem; /* Smaller heading size */
+      padding: 10px;
+    }
+  
+    .about p {
+      width: 80%; /* Full width for better readability */
+      margin-top: 5%;
+      font-size: 0.8rem; /* Smaller font size */
+      margin-left: 10px; /* Adjust margin for small screens */
+    }
+  }
+  
