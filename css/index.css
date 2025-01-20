@@ -258,7 +258,16 @@ ol, ul {
   color: white;
   background: linear-gradient(3deg, rgba(0,0,0,1) 0%, rgba(4,147,239,1) 100%);
   padding: 15px;
+  margin-bottom: 0 !important; 
 }
+.container.mt-5 {
+  margin-top: 0 !important; /* Removes the margin-top applied by the mt-5 Bootstrap class */
+}
+
+.card {
+  margin-top: 0; /* Ensures no extra gap above the card */
+}
+
 .hover-animation{
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
