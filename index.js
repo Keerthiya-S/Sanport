@@ -13,4 +13,9 @@ document.querySelectorAll('.topic-image').forEach((image) => {
   });
 });
 
-  
+const toggleIcon = document.querySelector('.toggle-icon');
+    const navigation = document.querySelector('.navigation');
+
+    toggleIcon.addEventListener('click', () => {
+      navigation.classList.toggle('active');
+    });

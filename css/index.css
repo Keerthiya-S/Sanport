@@ -18,11 +18,18 @@
     position: fixed;
     padding: 20px;
     background: linear-gradient(188deg, rgba(8,2,108,1) 0%, rgba(13,8,121,1) 100%);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+
 }
 .header div{
     display: flex;
     align-items: center;
     justify-content: space-between;
+}
+.toggle-icon {
+  display: none !important;
+  font-size: 1.5rem;
+  cursor: pointer;
 }
 .navi{
     display: inline;
@@ -59,7 +66,7 @@
     font-size: 18px;
 }
 .body h2{
-    font-size:xx-large;
+    font-size: 40px;
     
 }
 .body h1{
@@ -301,10 +308,26 @@ ol, ul {
     .body {
       width: 95%;
     }
-    .navi {
-        display: none; /* Stack navigation items */
-        
-      }
+    .toggle-icon {
+      display: block !important;
+    }
+    .navigation {
+      display: none;
+      flex-direction: column;
+      gap: 0.5rem;
+      background: linear-gradient(188deg, rgba(8,2,108,1) 0%, rgba(13,8,121,1) 100%);
+      position: absolute;
+      top: 100%;
+      right: 0;
+      width: 100%;
+      text-align: center;
+      padding: 1rem 0;
+      border-radius: 0.5rem;
+      box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    }
+    .navigation.active {
+      display: flex;
+    }
     .section2{
         height: 100%;
     }
@@ -362,16 +385,35 @@ ol, ul {
     .name {
       font-size: large; /* Adjust heading size */
     }
-  
-    .navi {
-      display: none; /* Stack navigation items */
-      
+    .intro h2{
+      font-weight: 700 !important;
+    }
+    .intro p{
+      font-size: 20px;
+      font-weight: 500;
+    }
+    .toggle-icon {
+      display: block !important;
+    }
+    .navigation {
+      display: none;
+      flex-direction: column;
+      gap: 0.5rem;
+      background: linear-gradient(188deg, rgba(8,2,108,1) 0%, rgba(13,8,121,1) 100%);
+      position: absolute;
+      top: 100%;
+      right: 0;
+      width: 100%;
+      text-align: center;
+      padding: 1rem 0;
+      border-radius: 0.5rem;
+      box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    }
+    .navigation.active {
+      display: flex;
     }
     .section2{
         height: 100%;
-    }
-    .icon{
-
     }
     .body .intro {
       padding: 15px;
